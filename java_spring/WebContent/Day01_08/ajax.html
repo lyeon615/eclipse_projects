@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+	
+		$(function(){
+			
+			$("$listBtn").click(function(){
+				$.ajax({
+					url:"./notajaxlist.html",
+					type:"post",
+					cache:false,
+					dataType:"html",
+					success: function(data){
+						$("#listDiv").html(data);
+					},
+					error: function(request, status, error){
+						console.log(error);
+					}
+				});
+			});		
+		});
+	
+	</script>
+
+</head>
+<body>
+	<input type="button" id="listBtn" value="list">
+
+</body>
+</html>

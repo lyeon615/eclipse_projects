@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script>
+		
+	
+		$(document).ready(function(){
+			
+			var wrapObj = $("#wrap");
+
+			//divObj객체 생성 및 추가
+			var divObj = $("<div>Hello jQuery</div>");
+			divObj.appendTo(wrapObj);
+			divObj.css("background", "#ff0");
+			
+			//아래는 위와 같은 내용
+			// $("<div>Hello jQuery</div>").appendTo($("#wrap")).css("background", "#ff0");
+			
+			//객체 생성 및 추가
+			var aObj = $("<a href='http://www.google.com' target='_blank'> google </a> <br/>");
+			aObj.appendTo(wrapObj);
+
+			var imgObj = $("<img src='image/over_basic.jpg'/><br/>");
+			imgObj.appendTo(wrapObj);
+			
+			var tempObj = {
+					src:"image/over_basic.jpg",
+					width:297,
+					height:124,
+					border:"5px"
+			};
+			
+			var imgAObj = $("<img>", tempObj);
+			imgObj.appendTo(wrapObj);
+		});
+	
+	</script>
+</head>
+<body>
+	<div id="wrap"> </div>
+</body>
+</html>

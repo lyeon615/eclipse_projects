@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script>
+		
+	
+		$(document).ready(function(){
+			
+			var co = $("#wrap > .contents1 > .p").clone();
+			co.appendTo($("#wrap > .contents1"));
+			
+			//아래는 위와 같다
+			//($("#wrap > .contents1 > .p").clone()).appendTo($("#wrap > .contents1"));
+			
+		});
+	
+	</script>
+	<style>
+		#wrap .contents1 .p{
+			background:#f00;
+		}
+		#wrap .contents2 .p{
+			background:#ff0;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="contents1">
+			<p class="p">contents1</p>
+		</div>
+	</div>
+</body>
+</html>

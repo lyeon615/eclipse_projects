@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+	.container {
+	background-color:powderblue;
+	height:200px;
+	
+	display:flex;
+	flex-direction:column;
+	flex-direction:row-reverse;
+	
+	}
+
+	.item {
+	background-color:tomato;
+	color:white;
+	border:1px solid white;
+	}
+
+	.item:nth-child(2) {
+	flex-basis:200px;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class = "item">1</div>
+		<div class = "item">2</div>
+		<div class = "item">3</div>
+		<div class = "item">4</div>
+		<div class = "item">5</div>
+	</div>
+</body>
+</html>

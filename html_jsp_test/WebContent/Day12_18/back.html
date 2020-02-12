@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+	<style>
+		div:first-child {
+            width:50%;
+            margin:0 auto;
+            height:200px;
+            background-image: url('http://www.sba.seoul.kr/kr/images/index/visual5.jpg');
+            background-size:100%;
+        }
+                  
+        div:nth-child(3) {
+            width:50%;
+            margin:0 auto;
+            height:200px;
+            background-image: url('http://www.sba.seoul.kr/kr/images/index/visual5.jpg');
+            background-size:50%;
+        }
+        
+        div:nth-child(5) {
+            width:50%;
+            margin:0 auto;
+            height:200px;
+            background-image: url('http://www.sba.seoul.kr/kr/images/index/visual5.jpg');
+            background-size:30%;
+        }
+        div:last-child {
+            width:50%;
+            margin:0 auto;
+            height:200px;
+            background-image: url('http://www.sba.seoul.kr/kr/images/index/visual5.jpg');
+            background-size:30%;
+            background-repeat:no-repeat;
+        }	
+
+	</style>
+</head>
+<body>
+    <div></div>
+    <br/> <!-- br이 하나의 div 태그로 여겨지기 때문에 다음 사진을 div:nth-child(3)으로 설정해야 한다.-->
+    <div></div>
+    <br/>
+    <div></div>
+    <br/>
+    <div></div>    
+</body>
+</html>

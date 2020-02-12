@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		
+		var objName = {
+				name : "lee sun sin",
+				nation : "korea",
+				gender : "man",
+				character : "good",
+		};
+		
+		console.log("nation" in objName);
+		console.log("age" in objName);
+				
+		with(objName){
+			console.log("name : " + name);
+			console.log("nation : " + nation);
+			console.log("gender : " + gender);
+			console.log("character : " + character);
+				
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

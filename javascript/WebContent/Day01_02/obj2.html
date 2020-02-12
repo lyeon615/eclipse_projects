@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		
+		var objData = {
+				nation : "korea",
+				capital : "seoul",
+				language : "hangeul",
+				population : 51000000,
+				nationalAnthem : function(){
+					console.log("Play korean national anthem~");
+				}
+		};
+		console.log(typeof objData);
+		
+		console.log("objData.nation : " + objData.nation);
+		console.log("objData.capital : " + objData.capital);
+	
+		console.log("objData[\"nation\"] : " + objData["nation"]);
+		console.log("objData[\"population\"] : " + objData["population"]);
+		
+		objData.nationalAnthem();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

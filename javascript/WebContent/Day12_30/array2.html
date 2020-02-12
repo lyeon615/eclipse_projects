@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	var varArrIndex = new Array(123, "ABC", "가나다", "abc", "가나다", "123");
+	
+	console.log("varArrIndex.indexOf(\"가나다\") : " + varArrIndex.indexOf("가나다"));
+	console.log("varArrIndex.lastIndexOf(\"가나다\") : " + varArrIndex.lastIndexOf("가나다"));
+	console.log("varArrIndex.indexOf(123) : " + varArrIndex.indexOf(123));
+	console.log("varArrIndex.lastIndexOf(123) : " + varArrIndex.lastIndexOf(123));
+	console.log("varArrIndex.indexOf(\"XYZ\") : " + varArrIndex.indexOf("XYZ"));
+
+	var varArrFir = new Array("ABC", "DEF");
+	var varArrSec = new Array("가나다", "라마바");
+	var varArrRes = varArrFir.concat(varArrSec);	
+	
+	console.log("varArrFir : " + varArrFir);
+	console.log("varArrSec : " + varArrSec);
+	console.log("varArrRes : " + varArrRes);
+
+	var varArrJoin = new Array("AB", "CD", "EF");
+	
+	console.log("varArrJoin : " + varArrJoin.join());
+	console.log("varArrJoin : " + varArrJoin.join("|"));
+	console.log("varArrJoin : " + varArrJoin.join(":"));
+	console.log("varArrtoString : " + varArrJoin.toString());
+	
+	var varArrSort = new Array("E", "B", "A", "C", "D", );
+	
+	console.log("varArrSortBefore : " + varArrSort);
+	console.log("varArrSort : " + varArrSort.sort());
+	console.log("varArrSortAfter : " + varArrSort);
+
+	var varArrReverse = new Array("E", "B", "A", "C", "D", );
+	
+	console.log("varArrReverseBefore : " + varArrReverse);
+	console.log("varArrReverse : " + varArrReverse.reverse());
+	console.log("varArrReverseAfter : " + varArrReverse);
+	
+	var varArrPush = new Array("ABC", "DEF");
+	
+	console.log("varArrPush : " + varArrPush.push("가나다", "라마바"));
+	console.log("varArrPush : " + varArrPush);
+	
+	var varArrShiftPop = new Array("가", "나", "다", "라", "마");
+	
+	console.log("varArrShiftPop.shift() : " + varArrShiftPop.shift());
+	console.log("varArrShiftPop : " + varArrShiftPop);
+	
+	console.log("varArrShiftPop.pop() : " + varArrShiftPop.pop());
+	console.log("varArrShiftPop : " + varArrShiftPop);
+	
+	
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		
+		var objName = {
+				name : "lee sun sin",
+				nation : "korea",
+				gender : "man",
+				character : "good",
+		};
+		
+		var print = "";
+		
+		for (var key in objName){
+			print += key + " : " + objName[key] + "\n"
+		}
+		console.log(print);
+		
+		objName.talent = "fencing";
+		print = "";
+		
+		for (var key in objName){
+			print += key + " : " + objName[key] + "\n"
+		}
+		console.log(print);
+
+		delete objName.talent;
+		print = "";
+		
+		for (var key in objName){
+			print += key + " : " + objName[key] + "\n"
+		}
+		console.log(print);		
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script>	
+	
+		$(document).ready(function(){
+			
+			function addHandler(e){
+				console.log("click");
+				console.log("this : " + this);
+				
+				var event = e;
+				
+				var co = $("#wrap").clone();
+				co.appendTo($("#wrap"));
+			};
+			
+			var c = document.getElementById("wrap");
+			c.addEventListener("click", addHandler, false); 
+			
+			//위와 같은 방법
+		 	/* var c = document.getElementById("wrap");
+			
+			c.addEventListener("click", function(){
+				console.log("click event");
+				var co = $("#wrap").clone();
+				co.appendTo($("#wrap"));
+			}, false); 
+			 */
+						
+		});
+	
+	</script>
+	<style>
+		#wrap .contents1 .p{
+			background:powderblue;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="contents1">
+			<p class="p">contents1</p>
+		</div>
+	</div>
+</body>
+</html>

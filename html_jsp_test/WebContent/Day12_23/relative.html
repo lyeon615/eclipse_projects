@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+	#contain{
+		width:800px; height:100px;
+		margin:0 auto;
+	}
+	
+	#header{
+		background-color:gray;
+		height:50px;
+	}
+	
+	#wrap{
+		height:200px;
+		border:1px solid gray;
+		padding:10px;
+	}
+	
+	#content1{
+		width:100px; height:100px;
+		background-color:red;
+		position:relative ;
+		top:0px;
+		left:0px;
+		z-index:2;
+		border:2px dashed green;
+		
+	}
+	
+	#content2{
+		width:100px; height:100px;
+		background-color:yellow;
+		position:relative;
+		top:-50px;
+		left:50px;
+		z-index:1;
+		border:2px dashed green;
+	}
+
+	#footer{
+		background-color:gray;
+		height:50px;
+	}
+</style>
+</head>
+<body>
+    <div id="contain">
+        <div id="header">HEADER</div>
+        <div id="wrap">
+            <div id="content1">content1</div>
+            <div id="content2">content2</div>
+        </div>
+        <div id="footer">FOOTER</div>
+    </div>
+</body>
+</html>

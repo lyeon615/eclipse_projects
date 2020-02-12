@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		window.onload = function() {
+			
+			var str = "";
+			str += "<p id='isTitle'> javascript & node.js </p>";
+			str += "<img id='logoImg' src='image/over_basic.jpg' width='470' tempData='logoImg'>";
+			
+			document.body.innerHTML = str;
+				
+			var titleNode = document.getElementById("isTitle");
+			titleNode.parentNode.removeChild(titleNode);
+			
+			var logoNode = document.getElementById("logoImg");
+			logoNode.parentNode.removeChild(logoNode);
+		
+		};
+	</script>
+</head>
+<body>
+
+</body>
+</html>

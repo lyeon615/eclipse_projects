@@ -1,0 +1,10 @@
+{
+	"SMITH":"800",
+	"ALLEN":"1600",
+	"WARD":"1250",
+	"JONES":"2975",
+	"MARTIN":"1250",
+	"BLAKE":"2850",			
+	
+	"DEPT":["ACCOUNTING", "OPERATIONS", "RESEARCH", "SALES"]
+} 

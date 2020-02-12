@@ -1,0 +1,3 @@
+{	
+	"DEPT":["ACCOUNTING", "OPERATIONS", "RESEARCH", "SALES"]
+}

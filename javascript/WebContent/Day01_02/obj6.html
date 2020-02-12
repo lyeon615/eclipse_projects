@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		
+		function createCar(name, color, speed){
+			var carObj = {
+					name : name,
+					color : color,
+					speed : speed,
+					run : function(){
+						return this.speed + "km/h"
+					}
+			};
+			return carObj;
+		};
+	
+		
+		var sorento = createCar("SORENTO", "GREY", 220);
+		console.log("sorento.name : " + sorento.name);		
+		console.log("sorento.run : " + sorento.run());		
+
+		var soul = createCar("SOUL", "WHITE", 180);
+		console.log("soul.name : " + soul.name);		
+		console.log("soul.run : " + soul.run());		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

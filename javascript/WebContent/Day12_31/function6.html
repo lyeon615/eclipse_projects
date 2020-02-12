@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+		
+	<script type = "text/javascript">
+	
+		var printTimeOutId = setTimeout(function(){
+										clearInterval(printIntervalId);
+										console.log("종료");
+										} , 7000);
+		var printIntervalId = setInterval(function(){
+										console.log("*");
+										} , 3000);
+		
+		var varEval = "console.log('eval함수')";
+		eval(varEval);
+		
+		varEval = "document.write('<p>eval함수</p>')";
+		eval(varEval);
+		
+	</script> 
+</head>
+	
+<body>		
+</body>	
+</html>

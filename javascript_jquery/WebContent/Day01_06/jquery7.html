@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script>
+		
+	
+		$(document).ready(function(){
+			
+			$("#wrap > .contents1 > .p").appendTo($("#wrap > .contents2"));
+			
+		});
+	
+	</script>
+	<style>
+		#wrap .contents1 .p{
+			background:#f00;
+		}
+		#wrap .contents2 .p{
+			background:#ff0;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="contents1">
+			<p class="p">contents1</p>
+		</div>
+		<div class="contents2">
+			<p class="p">contents2</p>
+		</div>
+	</div>
+</body>
+</html>

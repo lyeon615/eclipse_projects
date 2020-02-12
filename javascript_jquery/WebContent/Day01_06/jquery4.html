@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+		
+	
+		$(function(){
+			$("*").css("fontSize", "1.1em");
+
+			$("li").css("color", "#00f");
+			$("#item").css("background", "#ff0").css("width", "300px");
+			$(".seoul").css("background", "#f00");
+			$("li").css("color", "#00f");
+			$("p").css("fontWeight", "bolder");
+			$("#wrap p").css("border", "2px solid #ccc");
+			$("#wrap > p").css("border", "5px solid #ccc");
+
+		});
+	
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<p>jQuery selector</p>
+		
+		<div id="content">
+			<h1>content</h1>
+			<p>ㄱㄴㄷㄻㅄㅇㅈㅊㅋㅌㅍㅎ</p>
+			<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>	
+		</div>	
+		
+		<div id="item">
+			<ul>
+				<li class="seoul">서울</li>
+				<li class="gyeonggi_do">경기도</li>
+				<li>충청도</li>
+				<li>전라도</li>
+				<li>경상도</li>
+				<li>강원도</li>
+				<li>제주도</li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>

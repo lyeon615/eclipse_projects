@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+	
+		$(function(){
+			function eventHandler(event){
+				console.log("click");
+				console.log("this : " + this);
+				
+				for(key in event){
+					console.log(key + " : " + event[key]);
+				};
+			};
+			$("#objDiv").click(eventHandler);
+			$("#objPar").click(eventHandler);
+		});
+	
+	</script>
+	<style>
+		#objDiv, #objPar{
+			width: 200px; height: 100px;
+			line-height: 100px;
+			text-align: center;
+			font-size: 1.2em;
+			background-color: violet;
+			color: #fff;
+			font-weight: bolder;	 
+	</style>
+
+</head>
+<body>
+	<div id="objDiv">Object Division</div>
+	<p id="objPar">Object Paragraph</p>
+</body>
+</html>

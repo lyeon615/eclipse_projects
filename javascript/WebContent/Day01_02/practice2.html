@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	function Product(name, weight, price){
+		this.name = name;
+		this.weight = weight;
+		this.price = price;
+		this.calculate = function(weight){
+			return weight/100 * price + "원";
+		};
+	}
+	
+	var product = new Product("돼지 삼겹살", 100, 1690);
+	
+	console.log(product.calculate(200));
+	
+	console.log(product.calculate(300));
+
+</script>
+</head>
+<body>
+	
+</body>
+</html>

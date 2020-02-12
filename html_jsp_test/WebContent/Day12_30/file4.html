@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+
+	.wrapper{
+		max-width:1000px;
+	
+		display:grid;
+		grid-template-columns:20% 1fr 15%;
+		grid-template-rows:60px 1fr 60px;		
+		grid-template-areas:
+		"header header header"
+		"nav article ads"
+		"footer footer footer";
+		grid-gap:10px;
+		
+		height:100vh;
+		margin:0 auto;	
+	}
+	
+	@media (max-width:600px) {
+		.wrapper{
+			max-width:900px;
+			min-height:100vh;
+			
+			display:grid;
+			grid-template-columns:100%;
+			grid-template-rows:auto auto 1fr auto auto;
+			
+			grid-template-areas:
+			"header "
+			"nav"
+			"article"
+			"ads"
+			"footer";
+			
+			grid-gap:10px;
+			
+			height:100vh;
+			margin:0 auto;
+		}	
+	}
+	.wrapper > div{
+		background-color:gold;
+		padding:20px;
+	}
+	.header{
+		grid-area:header;
+	}
+	.nav{
+		grid-area:nav;
+
+	}
+	.article{
+		grid-area:article;
+
+	}
+	.ads{
+		grid-area:ads;
+
+	}
+	.footer{
+		grid-area:footer;
+
+	}
+	
+</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class = "header">header</div>
+		<div class = "nav">nav</div>
+		<div class = "article">article</div>
+		<div class = "ads">ads</div>
+		<div class = "footer">footer</div>
+	</div>
+</body>
+</html>

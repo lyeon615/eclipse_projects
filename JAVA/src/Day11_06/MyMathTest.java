@@ -1,0 +1,20 @@
+package Day11_06;
+
+import java.util.Scanner;
+
+public class MyMathTest {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int[] a = new int[5];
+		System.out.println("¿ä¼Ú°ªÀ» ÀûÀ¸½Ã¿À");
+		for (int i = 0; i < a.length; i++) {
+			System.out.print("a[" + i + "] : ");
+			a[i] = sc.nextInt();
+		}
+		System.out.println("ÃÖ¼Ú°ª : " + MyMath.myMin(a));
+		System.out.println("ÃÖ´ñ°ª : " + MyMath.myMax(a));
+
+		sc.close();
+	}
+}

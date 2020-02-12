@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+		
+	
+		$(function(){
+			$("input[type='text']").css("color", "#f00");
+			$("input[type='password']").css("color", "#00f");
+			$("input:submit").css("fontSize", "1.2em");
+
+			var chk = $("input:checked").val();
+			console.log("chk : " + chk);
+		
+			$("li:nth-child(2n+1)").css("background", "#ff0");
+
+		});
+	
+	</script>
+</head>
+<body>
+
+	<form>
+		USER ID <input type="text"><br/>
+		USER PW <input type="password"><br/>
+		Submit <input type="submit" value="Submit"><br/>
+		Reset <input type="reset" value="Reset"><br/>
+		Food<br/>
+		사과 <input type="checkbox" id="apple" value="사과">
+		바나나  <input type="checkbox" id="banana" value="바나나" checked >
+		수박 <input type="checkbox" id="watermelon" value="수박">
+		
+		<ul>
+			<li>이만기</li>
+			<li>이승엽</li>
+			<li>이종범</li>
+			<li>이재학</li>
+			<li>이순철</li>
+			<li>이길동</li>
+			<li>이동국</li>
+		</ul>
+		
+	</form>
+
+</body>
+</html>
